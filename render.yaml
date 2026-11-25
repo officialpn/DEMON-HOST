@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: demon-hosting-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: OWNER_ID
+        sync: false
+      - key: ADMIN_ID
+        sync: false
+      - key: YOUR_USERNAME
+        value: PR4MOD_H4X
+      - key: UPDATE_CHANNEL
+        value: pramodd_750x
+      - key: PYTHON_VERSION
+        value: 3.11.0
